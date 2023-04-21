@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Vue Clock</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+	<div id="app">
+		<h1>{{ message }}</h1>
+		<div class="clock">
+			<div class="hand dot-red"></div>
+			<div class="hand dot"></div>
+			<div class="hand hour" :style="{ transform: 'rotate(' + hourDegrees + 'deg)' }"></div>
+			<div class="hand minute" :style="{ transform: 'rotate(' + minuteDegrees + 'deg)' }"></div>
+			<div class="hand second" :style="{ transform: 'rotate(' + secondDegrees + 'deg)' }"></div>
+		</div>
+	</div>
+	<script src="app.js"></script>
+</body>
